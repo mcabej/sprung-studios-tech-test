@@ -2,10 +2,10 @@
 
 To start the project follow these steps: 
 1. Run <code>npm install</code>
-2. Run <code>npm start</code>
+2. Run <code>npx tailwindcss -i ./public/styles.css -o ./dist/output.css</code>
+3. Run <code>npm start</code>
 
 You should be good to go!
-
 
 ## Brief
 
