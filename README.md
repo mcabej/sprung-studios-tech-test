@@ -1,10 +1,18 @@
 # Sprung Studios Tech Test
 
+To start the project follow these steps: 
+1. Run <code>npm install</code>
+2. Run <code>npm start</code>
+
+You should be good to go!
+
+
+## Brief
+
 Using the assets provided, your task is to create a prototype for PC/ Mac which replicates the following functionality:
 - Populating the inventory
 - Dragging/ Dropping with item stacking
 
-## Brief
 The goal is to implement a responsive inventory system you might traditionally see in a game.
 
 - The inventory system will start by randomly populating the grid with a range of items. 
@@ -22,4 +30,4 @@ Please follow the rules below when creating the prototype:
 
 ## Delivery
 - ZIP your source files and send them to us via email.
-- After we receive your test please give us time to review it and await our respons
+- After we receive your test please give us time to review it and await our response
