@@ -1,4 +1,4 @@
-import React, {useRef, useState, ReactNode} from 'react';
+import React, {useRef, useState} from 'react';
 import corner from "../../../public/assets/Images/InventoryMain/IMG_CornerBrace.png";
 import inventoryPanel from "../../../public/assets/Images/InventoryMain/IMG_InventoryPanel.png";
 import decorTop from "../../../public/assets/Images/InventoryMain/IMG_DecorShape_Top.png";
@@ -6,7 +6,7 @@ import decorOther from "../../../public/assets/Images/InventoryMain/IMG_DecorSha
 import inventoryIcon from "../../../public/assets/Images/InventoryMain/IMG_InventoryIcon.png";
 
 interface InventoryMenuProps {
-    children: ReactNode
+    children: React.ReactNode
 }
 
 const InventoryMenu = ({children}: InventoryMenuProps) => {
