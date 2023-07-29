@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-    .inventory-background {
-        position     : relative;
-        top          : 23.5%;
-        left         : 0;
-        border-radius: 25px;
-        padding      : 0;
+    .stack-grid-bg {
+        background-image: url('/public/assets/Images/InventoryMain/IMG_GridBorderV2.png'), url('/public/assets//Images/InventoryMain/IMG_GridBackground.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .custom-hover-tile:hover {
+        background-image: url('/public/assets/Images/InventoryMain/IMG_SlotHighlight.png');
+        background-position: center;
+        background-size: contain;
+        cursor: pointer;
     }
 }

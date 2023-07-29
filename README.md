@@ -2,16 +2,15 @@
 
 To start the project follow these steps: 
 1. Run <code>npm install</code>
-2. Run <code>npx tailwindcss -i ./public/styles.css -o ./dist/output.css</code>
-3. Run <code>npm start</code>
+2. Then, <code>npm run start</code>
 
 You should be good to go!
 
 ## Brief
 
-Using the assets provided, your task is to create a prototype for PC/ Mac which replicates the following functionality:
+Using the assets provided, your task is to create a prototype for PC/Mac which replicates the following functionality:
 - Populating the inventory
-- Dragging/ Dropping with item stacking
+- Dragging/Dropping with item stacking
 
 The goal is to implement a responsive inventory system you might traditionally see in a game.
 
@@ -28,6 +27,6 @@ Please follow the rules below when creating the prototype:
 - Avoid downloading off-the-shelf assets. e.g. From the Unity Asset Store
 - Feel free to experiment with your own animations
 
-## Delivery
+### Delivery
 - ZIP your source files and send them to us via email.
 - After we receive your test please give us time to review it and await our response
