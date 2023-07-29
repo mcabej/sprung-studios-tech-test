@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: 'Sprung Menu';
+        src: url('./assets/Fonts/MenusPrimaryFont.ttf');
+    }
+
+    @font-face {
+        font-family: 'Sprung Numeric';
+        src: url('./assets/Fonts/NumericsFont.otf');
+    }
+
+    @font-face {
+        font-family: 'Sprung ToolTip';
+        src: url('./assets/Fonts/ToolTipDescription.ttf');
+    }
+
+    body {
+        font-family: "Sprung Menu";
+    }
+}
+
 @layer components {
     .stack-grid-bg {
         background-image: url('/public/assets/Images/InventoryMain/IMG_GridBorderV2.png'), url('/public/assets//Images/InventoryMain/IMG_GridBackground.png');
@@ -14,5 +35,9 @@
         background-position: center;
         background-size: contain;
         cursor: pointer;
+    }
+
+    .inventory-count {
+        font-family: 'Sprung Numeric';        
     }
 }

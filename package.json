@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "source": "public/index.html",
+  "alias": {
+    "assets-images": "./public/assets/Images"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel --no-cache",

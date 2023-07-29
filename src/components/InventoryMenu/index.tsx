@@ -1,11 +1,15 @@
-import React, { useRef, useState } from "react";
-import corner from "../public/assets/Images/InventoryMain/IMG_CornerBrace.png";
-import inventoryPanel from "../public/assets/Images/InventoryMain/IMG_InventoryPanel.png";
-import decorTop from "../public/assets/Images/InventoryMain/IMG_DecorShape_Top.png";
-import decorOther from "../public/assets/Images/InventoryMain/IMG_DecorShape_Other.png";
-import inventoryIcon from "../public/assets/Images/InventoryMain/IMG_InventoryIcon.png";
+import React, {useRef, useState, ReactNode} from 'react';
+import corner from "../../../public/assets/Images/InventoryMain/IMG_CornerBrace.png";
+import inventoryPanel from "../../../public/assets/Images/InventoryMain/IMG_InventoryPanel.png";
+import decorTop from "../../../public/assets/Images/InventoryMain/IMG_DecorShape_Top.png";
+import decorOther from "../../../public/assets/Images/InventoryMain/IMG_DecorShape_Other.png";
+import inventoryIcon from "../../../public/assets/Images/InventoryMain/IMG_InventoryIcon.png";
 
-const App = () => {
+interface InventoryMenuProps {
+    children: ReactNode
+}
+
+const InventoryMenu = ({children}: InventoryMenuProps) => {
     const invPanelRef                 = useRef(null);
     const [panelSize, setPanelSize]   = useState([]);
     const [invPosSize, setInvPosSize] = useState({});    
@@ -60,11 +64,7 @@ const App = () => {
                         }}
                     >
                         {/* tiles */}
-                        <div className={'h-full w-full grid grid-rows-5 grid-cols-8 gap-[15px] p-[17px]'}>
-                            <div className={'flex justify-center items-center custom-hover-tile'}>01</div>
-                            <div className={'flex justify-center items-center custom-hover-tile'}>02</div>
-                            <div className={'flex justify-center items-center custom-hover-tile'}>03</div>
-                        </div>
+                        {children}
 
                         {/* decorators */}
                         <div className={'absolute -right-[62px]'} style={{ top: '42.6%' }}>
@@ -95,5 +95,4 @@ const App = () => {
     )
 }
 
-export default App;
-
+export default InventoryMenu;

@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "jsx": "react",    
+  },
+  "include": ["src", "src/declaration.d.ts", "data/models/Consumables", "data/models/Base/BaseItem.ts"]
+}
