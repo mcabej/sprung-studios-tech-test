@@ -22,7 +22,10 @@
   },
   "dependencies": {
     "@dnd-kit/core": "^6.0.8",
+    "@dnd-kit/modifiers": "^6.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-tooltip": "^5.19.0",
+    "uuid": "^9.0.0"
   }
 }

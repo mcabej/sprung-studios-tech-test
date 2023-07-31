@@ -24,20 +24,10 @@
 }
 
 @layer components {
-    .stack-grid-bg {
-        background-image: url('/public/assets/Images/InventoryMain/IMG_GridBorderV2.png'), url('/public/assets//Images/InventoryMain/IMG_GridBackground.png');
-        background-position: center;
-        background-size: cover;
-    }
-
     .custom-hover-tile:hover {
         background-image: url('/public/assets/Images/InventoryMain/IMG_SlotHighlight.png');
         background-position: center;
         background-size: contain;
         cursor: pointer;
-    }
-
-    .inventory-count {
-        font-family: 'Sprung Numeric';        
     }
 }

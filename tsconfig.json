@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "jsx": "react",    
+    "lib": [ "es6", "DOM" ],
+    "target": "es5"
   },
   "include": ["src", "src/declaration.d.ts", "data/models/Consumables", "data/models/Base/BaseItem.ts"]
 }

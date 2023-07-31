@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js,ts,jsx,tsx}", "./src/**/*.{html,js,ts,jsx,tsx}"],
-  theme: {
+  theme: {    
     extend: {
       backgroundImage: {
         'game'                 : "url('/public/assets/Images/Background/UI_Background.png')",
@@ -11,7 +11,12 @@ module.exports = {
         'inventory-decor-top'  : "url('/public/assets/Images/InventoryMain/IMG_DecorShape_Top.png')",
         'inventory-decor-other': "url('/public/assets/Images/InventoryMain/IMG_DecorShape_Other.png')",
         'inventory-corner'     : "url('/public/assets/Images/InventoryMain/IMG_CornerBrace.png')",
-        'hightlight'           : "url('/public/assets/Images/InventoryMain/IMG_SlotHighlight.png')"
+        'hightlight'           : "url('/public/assets/Images/InventoryMain/IMG_SlotHighlight.png')",
+        'tooltip'              : "url('/public/assets/Images/Tooltip/IMG_TooltipPanel.png')"
+      },
+      fontFamily: {
+        'sprung-numeric': ['Sprung Numeric'],
+        'sprung-tooltip': ['Sprung ToolTip']
       },
     }    
   },
