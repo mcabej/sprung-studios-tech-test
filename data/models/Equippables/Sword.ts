@@ -10,6 +10,8 @@ export interface SwordProps extends BaseProps {
 export class Sword extends BaseItem {
     constructor(props: SwordProps) {
         super(props);  
+
+        this.isStackable = false;
         
         if (props.name === 'Excalibur') {
             this.description = 'Forged for the future king. Deals 20 damage, requires 20 strength';
