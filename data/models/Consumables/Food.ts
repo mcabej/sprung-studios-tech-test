@@ -1,6 +1,6 @@
 import { BaseItem, BaseProps } from "../Base/BaseItem"
 
-export type FoodOptions = 'apple' | 'herbs'
+export type FoodOptions = 'Apple' | 'Herbs'
 
 export interface FoodItemProps extends BaseProps {
     id?  : number,
@@ -13,12 +13,12 @@ export class Food extends BaseItem {
     constructor(props: FoodItemProps) {
         super(props);                
         
-        if (props.name === 'apple') {
+        if (props.name === 'Apple') {
             this.description = 'Apple fruit give you 10 stamina when consumed'
         }
 
-        if (props.name === 'herbs') {
-            this.description = 'Herbs gathered by the locals, rejuvenates mana by 10 when consumed'
+        if (props.name === 'Herbs') {
+            this.description = 'Rejuvenates mana by 10 when consumed'
         }
 
     }

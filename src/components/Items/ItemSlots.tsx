@@ -1,13 +1,18 @@
-import { DndContext } from "@dnd-kit/core";
+import { DndContext, PointerSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
 import { restrictToWindowEdges } from "@dnd-kit/modifiers";
 import React, { useState } from "react";
 import { generateItems } from "../../../data/services/generateItems";
-import { IItem } from "./Item";
 import { ItemSlot } from "./ItemSlot";
 
 export const ItemSlots = () => {  
-  const items = generateItems();
-  const [activeItem, setActiveItem] = useState<IItem | null>(null);
+  const sensors = useSensors(useSensor(PointerSensor), useSensor(TouchSensor, {
+     // Press delay of 250ms, with tolerance of 5px of movement
+     activationConstraint: {
+      delay: 250,
+      tolerance: 5,
+    },
+  }))
+  const items = generateItems();  
   const [itemSlots, setItemSlots] = useState(create8x5ItemSlots);
 
   function create8x5ItemSlots() {
@@ -67,8 +72,8 @@ export const ItemSlots = () => {
   }
 
   return (
-    <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToWindowEdges]}>
-      <div className={"h-full w-full grid grid-rows-5 grid-cols-8 gap-3 px-4 pt-4 pb-2"}>
+    <DndContext onDragEnd={handleDragEnd} sensors={sensors}>
+      <div className={"h-full w-full grid grid-rows-5 grid-cols-8 gap-3 px-4 pt-[1.1rem] pb-2"}>
         {itemSlots.map((item, index) => {
           return <ItemSlot key={index} id={index} item={item} />;
         })}        

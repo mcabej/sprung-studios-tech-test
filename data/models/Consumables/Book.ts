@@ -10,5 +10,7 @@ export interface BookProps extends BaseProps {
 export class Book extends BaseItem {
     constructor(props: BookProps) {
         super(props);
+
+        this.description = 'Slash your enemy with great ferocity. Deals 20 damage, consumes 10 mana'
     }
 }

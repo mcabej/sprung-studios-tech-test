@@ -1,5 +1,5 @@
 import { useDraggable } from "@dnd-kit/core";
-import React, {useState} from "react";
+import React from "react";
 
 
 export interface IItem {
@@ -26,9 +26,7 @@ export const Item = ({ id, icon, quantity, name, description }: IItem) => {
       description,
       icon
     }    
-  });
-
-  const [hover, setHover] = useState(false);
+  });  
 
   const style = transform ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)` } : undefined;
 

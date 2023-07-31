@@ -11,21 +11,24 @@ import swordIcon from "../../public/assets/Images/Icons/Sword.png";
 
 export function generateItems() {
   // Swords
-  const excaliburSword = new Sword({ icon: swordIcon, id: 1, name: "excalibur", quantity: 1 });
-  const otherSword = new Sword({ icon: swordIcon, id: 2, name: "excalibur", quantity: 1 });
+  const excaliburSword = new Sword({ icon: swordIcon, id: 1, name: "Excalibur", quantity: 1 });
+  const otherExcalibur = new Sword({ icon: swordIcon, id: 11, name: "Excalibur", quantity: 1 });
+  const otherKatana = new Sword({ icon: swordIcon, id: 12, name: "Katana", quantity: 1 });
+  const katana = new Sword({ icon: swordIcon, id: 13, name: "Katana", quantity: 1 });
 
   // Food
-  const apples = new Food({ icon: appleIcon, id: 3, name: "apple", quantity: 10 });
-  const herbs = new Food({ icon: herbIcon, id: 4, name: "herbs", quantity: 16 });
-  const moreHerbs = new Food({ icon: herbIcon, id: 9, name: "herbs", quantity: 16 });
+  const apples = new Food({ icon: appleIcon, id: 3, name: "Apple", quantity: 10 });
+  const moreApples = new Food({ icon: appleIcon, id: 10, name: "Apple", quantity: 12 });
+  const herbs = new Food({ icon: herbIcon, id: 4, name: "Herbs", quantity: 16 });
+  const moreHerbs = new Food({ icon: herbIcon, id: 9, name: "Herbs", quantity: 16 });
 
   // Books
   const greatSlash = new Book({ icon: bookIcon, id: 5, name: "Great Slash", quantity: 1 });
-  const piercingArrow = new Book({ icon: bookIcon, id: 6, name: "Great Slash", quantity: 1 });
+  const anotherGreatSlash = new Book({ icon: bookIcon, id: 6, name: "Great Slash", quantity: 1 });
 
   // Potions
-  const hpPotions = new Potion({ icon: potionIcon, id: 7, name: "hp", quantity: 5 });
-  const manaPotions = new Potion({ icon: potionIcon, id: 8, name: "hp", quantity: 7 });
+  const hpPotions = new Potion({ icon: potionIcon, id: 7, name: "HP Potion", quantity: 5 });
+  const manaPotions = new Potion({ icon: potionIcon, id: 8, name: "Mana Potion", quantity: 7 });
   
-  return [manaPotions, excaliburSword, herbs, otherSword, apples, greatSlash, hpPotions, piercingArrow, moreHerbs];
+  return [manaPotions, excaliburSword, herbs, otherExcalibur, apples, greatSlash, hpPotions, katana, anotherGreatSlash, moreHerbs, moreApples, otherKatana];
 }

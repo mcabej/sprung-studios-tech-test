@@ -3,6 +3,7 @@ export interface BaseProps {
     name    : string,
     quantity: number,
     icon    : string,
+    description?: string
 }
 
 export class BaseItem implements BaseProps {
@@ -10,29 +11,17 @@ export class BaseItem implements BaseProps {
     public name    : string;
     public quantity: number;
     public icon    : string;
+    public description?: string;
 
-    constructor({id, name, quantity, icon}: BaseProps) {
-        this.id       = id;
-        this.name     = name;
-        this.quantity = quantity;
-        this.icon     = icon;
+    constructor({id, name, quantity, icon, description}: BaseProps) {
+        this.id          = id;
+        this.name        = name;
+        this.quantity    = quantity;
+        this.icon        = icon;
+        this.description = description;
     }
 
     getId() {
         return this.id;
-    }
-
-    removeItem() {
-        if (this.quantity !== 0) {
-            this.quantity -= 1;
-        }
-    }
-
-    addItem() {
-        this.quantity += 1;        
-    }
-
-    getItem() {
-        return this;
     }
 }
