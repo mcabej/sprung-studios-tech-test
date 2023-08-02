@@ -9,9 +9,10 @@ export interface IItem {
   quantity?: number;
   icon?: string;
   description?: string;
+  isStackable?: boolean;
 }
 
-export const Item = ({ id, icon, quantity, name, description }: IItem) => {
+export const Item = ({ id, icon, quantity, name, description, isStackable }: IItem) => {
   const {
     setNodeRef,
     attributes,
@@ -24,7 +25,8 @@ export const Item = ({ id, icon, quantity, name, description }: IItem) => {
       quantity,
       name,
       description,
-      icon
+      icon,
+      isStackable
     }    
   });  
 

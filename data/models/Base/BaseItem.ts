@@ -21,7 +21,7 @@ export class BaseItem implements BaseProps {
         this.quantity    = quantity;
         this.icon        = icon;
         this.description = description;
-        this.isStackable = isStackable;
+        this.isStackable = isStackable || true;
     }
 
     getId() {
