@@ -50,7 +50,6 @@ export const ItemSlots = () => {
 
       // check if new slot has an item already
       if (newItemSlots[id] !== null) {
-        console.log(active.data.current);
         if (active.data.current.name === newItemSlots[id].name && active.data.current.isStackable) {          
           // stack items
           newItemSlots[id].quantity += active.data.current.quantity;
